@@ -1,0 +1,27 @@
+---
+title: "iris_plot"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+summary(iris)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+library(ggplot2)
+ggplot(iris, aes(Sepal.Length, Sepal.Width, col=Species)) +
+  geom_point(size=2) +
+  theme_bw() +
+  facet_wrap(~Species) 
+```
+
+이론 된장...ㅠㅜ..

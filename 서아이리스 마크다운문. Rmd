@@ -1,0 +1,24 @@
+---
+title: "iris_plot"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+summary(iris)
+```
+
+- 이런 써글...ㅠㅜ
+
+```{r}
+library(ggplot2)
+ggplot(iris, aes(Sepal.Length, Sepal.Width, col=Species)) +
+  geom_point(size=2) +
+  theme_bw() +
+  facet_wrap(~Species) 
+```
+
