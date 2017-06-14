@@ -1,0 +1,32 @@
+iris_plot
+========================================================
+author: 오정희
+date: 2017. 6. 14
+autosize: true
+
+First Slide
+========================================================
+
+
+
+Slide With Code
+iris 데이터요약..
+========================================================
+
+```{r}
+summary(iris)
+```
+
+Slide With Plot
+========================================================
+
+```{r}
+library(ggplot2)
+ggplot(iris, aes(Sepal.Length, Sepal.Width, col=Species)) +
+  geom_point(size=2) +
+  theme_bw() +
+  facet_wrap(~Species)  
+```
+
+이것참..고약하구먼..
+
